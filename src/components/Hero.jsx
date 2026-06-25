@@ -1,16 +1,12 @@
 import React from 'react';
-import profilePic from '../assets/profile.jpg';
+import profilePic from '../assets/profile.png';
 
 function Hero() {
   return (
     <section className="min-h-screen flex flex-col bg-slate-950 text-white px-6 md:px-16 relative overflow-hidden">
 
-      {/* Ambient glow blobs */}
-      <div className="absolute top-1/4 left-1/3 w-[30rem] h-[30rem] bg-purple-600/15 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-1/4 w-[30rem] h-[30rem] bg-fuchsia-600/10 rounded-full blur-3xl"></div>
-
       {/* Top label */}
-      <div className="relative z-20 pt-10 overflow-hidden">
+      <div className="relative z-30 pt-10 overflow-hidden">
         <p className="animate-slide-in-left opacity-0 [animation-delay:0.1s] font-mono text-sm md:text-base tracking-widest uppercase text-slate-400">
           Aaron's Portfolio
         </p>
@@ -20,26 +16,30 @@ function Hero() {
       <div className="relative flex-1 flex items-center justify-center md:justify-start">
 
         <h1
-          className="select-none font-black uppercase leading-none tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500 animate-fade-up opacity-0 [animation-delay:0.3s]"
-          style={{ fontSize: 'clamp(3.5rem, 14vw, 11rem)' }}
+          className="relative z-20 select-none font-black uppercase leading-none text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500 animate-fade-up opacity-0 [animation-delay:0.2s] w-full text-center md:text-left pointer-events-none"
+          style={{ fontSize: 'clamp(3.2rem, 13vw, 10.5rem)', letterSpacing: '-0.03em' }}
         >
           PORTFOLIO
         </h1>
 
-        {/* Photo, overlapping the wordmark */}
+        {/* Photo: smaller, sits mostly ABOVE the text line, only chin/shoulders overlap the letters */}
         <div
-          className="absolute right-[6%] md:right-[14%] bottom-0 h-[78%] md:h-[88%] animate-slide-in-up opacity-0 [animation-delay:0.5s] flex items-end"
+          className="absolute right-[4%] md:right-[10%] bottom-[-4%] h-[58%] md:h-[68%] z-10 animate-slide-in-up opacity-0 [animation-delay:0.4s]"
+          style={{
+            maskImage: 'linear-gradient(to bottom, black 80%, transparent 100%)',
+            WebkitMaskImage: 'linear-gradient(to bottom, black 80%, transparent 100%)',
+          }}
         >
           <img
             src={profilePic}
             alt="Aaron Ludwig"
-            className="h-full w-auto object-contain object-bottom drop-shadow-[0_0_45px_rgba(192,38,211,0.35)]"
+            className="h-full w-auto object-contain object-bottom drop-shadow-[0_0_60px_rgba(192,38,211,0.45)]"
           />
         </div>
       </div>
 
       {/* Bottom intro line + CTAs */}
-      <div className="relative z-20 pb-12 md:pb-16 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+      <div className="relative z-30 pb-16 md:pb-20 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
         <p className="animate-fade-up opacity-0 [animation-delay:0.7s] max-w-md text-slate-400 leading-relaxed">
           <span className="text-slate-100 font-semibold">Computer Engineering Student.</span>{' '}
           I build interactive front-end interfaces and design smart hardware integrations —
