@@ -41,7 +41,7 @@ function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: 'easeOut' }}
             className="absolute z-20 bottom-0 h-[25vh] md:h-[40vh]"
-            style={{ left: '57%', bottom: '-30%' }}
+            style={{ left: '60%', bottom: '-25%' }}
           >
             <img
               src={profilePic}
