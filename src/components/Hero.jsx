@@ -40,7 +40,7 @@ function Hero() {
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: 'easeOut' }}
-            className="absolute z-20 bottom-0 h-[30vh] md:h-[45vh]"
+            className="absolute z-20 bottom-0 h-[25vh] md:h-[40vh]"
             style={{ left: '55%', bottom: '-30%' }}
           >
             <img
