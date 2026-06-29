@@ -57,19 +57,11 @@ function Hero() {
                 <a
                   key={item}
                   href={`#${sectionId}`}
-                  className={`px-3 py-1.5 text-sm font-medium rounded-full transition-all duration-300 ${
+                  className={`px-3 py-1.5 text-sm font-medium rounded-full transition-all duration-200 ${
                     isActive
-                      ? 'text-white'
-                      : 'text-[#f5f3ee] hover:text-white'
+                      ? 'bg-[#f5f3ee] text-[#0a0a0f] shadow-sm'
+                      : 'text-[#f5f3ee] hover:bg-[#16161c] hover:text-white'
                   }`}
-                  style={
-                    isActive
-                      ? {
-                          textShadow:
-                            '0 0 6px rgba(245,243,238,0.9), 0 0 18px rgba(245,243,238,0.6), 0 0 32px rgba(245,243,238,0.35)',
-                        }
-                      : undefined
-                  }
                 >
                   {item}
                 </a>
