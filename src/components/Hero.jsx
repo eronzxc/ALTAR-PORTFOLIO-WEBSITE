@@ -24,7 +24,7 @@ function Hero() {
 
           <nav
             aria-label="Top navigation"
-            className="flex flex-wrap items-center gap-2 rounded-full border border-[#3a3a42] bg-[#111118]/80 px-3 py-2 backdrop-blur-sm"
+            className="flex flex-wrap items-center gap-2 rounded-full bg-transparent px-3 py-2"
           >
             {navItems.map((item) => (
               <a
