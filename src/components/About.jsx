@@ -14,12 +14,12 @@ function About() {
         >
           <p className="text-sm uppercase tracking-[0.35em] text-[#8b8b94]">About</p>
           <h2 className="mt-3 text-3xl md:text-4xl font-semibold leading-tight">
-            I’m a 3rd-year Computer Engineering student currently taking my summer OJT journey.
+            I’m a Computer Engineering student transitioning from 3rd year to 4th year, currently gaining hands-on experience through summer OJT.
           </h2>
           <p className="mt-5 text-base md:text-lg leading-relaxed text-[#c9c7bf]">
-            I’m in the transition between my 3rd year and 4th year in Computer Engineering,
-            and this summer OJT experience is helping me grow beyond the classroom by applying
-            what I’ve learned in real-world work and problem-solving.
+            This stage of my journey is about applying what I’ve learned in the classroom to real-world challenges,
+            strengthening my technical foundation, and growing through practical experience.
+            I’m especially interested in creating thoughtful solutions that connect technology with meaningful impact.
           </p>
         </motion.div>
 
@@ -33,13 +33,13 @@ function About() {
           >
             <p className="text-sm uppercase tracking-[0.3em] text-[#8b8b94]">Who I am</p>
             <p className="mt-4 text-[#f5f3ee] leading-relaxed">
-              I’m someone who enjoys building meaningful digital experiences while also appreciating
-              the logic and discipline behind systems and hardware. My interest lies in creating smart,
-              thoughtful solutions that connect creativity with engineering.
+              I enjoy building meaningful digital experiences while also appreciating the logic,
+              structure, and problem-solving behind systems and hardware. My interest lies in developing
+              practical solutions that balance creativity, engineering, and real-world usefulness.
             </p>
             <p className="mt-4 text-[#c9c7bf] leading-relaxed">
-              This stage of my journey is all about learning, adapting, and strengthening my skills
-              through hands-on experience and continuous growth.
+              I’m continuously learning how to adapt, improve, and contribute with purpose as I move closer
+              to the final stage of my academic journey.
             </p>
           </motion.div>
 
