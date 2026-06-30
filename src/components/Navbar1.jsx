@@ -6,27 +6,25 @@ function Navbar() {
   const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
-    const sectionIds = ['home', 'about', 'projects', 'certificates'];
-    const navbarHeight = 80;
+    const sections = ['home', 'about', 'projects', 'certificates'];
 
-    const getActiveSection = () => {
-      let current = sectionIds[0];
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.4 }
+    );
 
-      sectionIds.forEach((id) => {
-        const el = document.getElementById(id);
-        if (!el) return;
-        const top = el.getBoundingClientRect().top - navbarHeight;
-        if (top <= 0) {
-          current = id;
-        }
-      });
+    sections.forEach((id) => {
+      const element = document.getElementById(id);
+      if (element) observer.observe(element);
+    });
 
-      setActiveSection(current);
-    };
-
-    getActiveSection();
-    window.addEventListener('scroll', getActiveSection, { passive: true });
-    return () => window.removeEventListener('scroll', getActiveSection);
+    return () => observer.disconnect();
   }, []);
 
   return (

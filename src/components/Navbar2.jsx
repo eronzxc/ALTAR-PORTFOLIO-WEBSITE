@@ -7,26 +7,35 @@ function Navbar() {
 
   useEffect(() => {
     const sectionIds = ['home', 'about', 'projects', 'certificates'];
-    const navbarHeight = 80;
 
-    const getActiveSection = () => {
-      let current = sectionIds[0];
+    const observer = new IntersectionObserver(
+      () => {
+        // Find whichever section is closest to the top of the viewport
+        const scrollY = window.scrollY;
+        let closest = sectionIds[0];
+        let closestDistance = Infinity;
 
-      sectionIds.forEach((id) => {
-        const el = document.getElementById(id);
-        if (!el) return;
-        const top = el.getBoundingClientRect().top - navbarHeight;
-        if (top <= 0) {
-          current = id;
-        }
-      });
+        sectionIds.forEach((id) => {
+          const el = document.getElementById(id);
+          if (!el) return;
+          const distance = Math.abs(el.getBoundingClientRect().top);
+          if (distance < closestDistance) {
+            closestDistance = distance;
+            closest = id;
+          }
+        });
 
-      setActiveSection(current);
-    };
+        setActiveSection(closest);
+      },
+      { rootMargin: '-30% 0px -60% 0px' }
+    );
 
-    getActiveSection();
-    window.addEventListener('scroll', getActiveSection, { passive: true });
-    return () => window.removeEventListener('scroll', getActiveSection);
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
   }, []);
 
   return (
