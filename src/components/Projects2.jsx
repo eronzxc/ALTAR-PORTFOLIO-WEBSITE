@@ -120,7 +120,7 @@ function Projects() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="mb-32"
+        className="mb-20"
       >
         <p className="font-mono text-xs tracking-widest uppercase text-[#8b8b94] mb-3">
           Selected Work

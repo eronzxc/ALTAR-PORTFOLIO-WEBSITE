@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 function About() {
   return (
-    <section id="about" className="min-h-screen bg-[#0a0a0f] text-[#f5f3ee] px-6 md:px-16 pt-36 pb-28">
+    <section id="about" className="min-h-screen bg-[#0a0a0f] text-[#f5f3ee] px-6 md:px-16 py-20 md:py-28">
       <div className="mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -13,7 +13,7 @@ function About() {
           className="max-w-3xl"
         >
           <p className="text-sm uppercase tracking-[0.35em] text-[#8b8b94]">About</p>
-          <h2 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
+          <h2 className="mt-3 text-3xl md:text-4xl font-semibold leading-tight">
             I’m a Computer Engineering student transitioning from 3rd year to 4th year, currently gaining hands-on experience through summer OJT.
           </h2>
           <p className="mt-5 text-base md:text-lg leading-relaxed text-[#c9c7bf]">

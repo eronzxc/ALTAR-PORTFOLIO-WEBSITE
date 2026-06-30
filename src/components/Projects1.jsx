@@ -112,7 +112,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="bg-[#0a0a0f] text-[#f5f3ee] px-6 md:px-16 pt-32 pb-40"
+      className="min-h-screen bg-[#0a0a0f] text-[#f5f3ee] px-6 md:px-16 py-24"
     >
       {/* Section header */}
       <motion.div
@@ -120,7 +120,7 @@ function Projects() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="mb-32"
+        className="mb-20"
       >
         <p className="font-mono text-xs tracking-widest uppercase text-[#8b8b94] mb-3">
           Selected Work
@@ -134,7 +134,7 @@ function Projects() {
       </motion.div>
 
       {/* Project list */}
-      <div className="flex flex-col gap-40">
+      <div className="flex flex-col gap-28">
         {projects.map((project, index) => {
           const isEven = index % 2 === 0;
 
@@ -145,7 +145,7 @@ function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-80px' }}
               transition={{ duration: 0.65, ease: 'easeOut' }}
-              className={`flex flex-col gap-10 md:gap-16 md:items-center min-h-[60vh] ${
+              className={`flex flex-col gap-10 md:gap-16 md:items-center ${
                 isEven ? 'md:flex-row' : 'md:flex-row-reverse'
               }`}
             >

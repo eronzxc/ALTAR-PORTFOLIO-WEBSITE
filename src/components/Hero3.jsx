@@ -6,7 +6,7 @@ import profilePic from '../assets/profile.png';
 
 function Hero() {
   return (
-    <section id="home" className="min-h-screen flex flex-col bg-[#0a0a0f] text-[#f5f3ee] px-6 md:px-16 relative overflow-hidden pt-28 md:pt-32">
+    <section className="min-h-screen flex flex-col bg-[#0a0a0f] text-[#f5f3ee] px-6 md:px-16 relative overflow-hidden pt-28 md:pt-32">
 
       {/* Wordmark behind, photo in front, overlapping at the right end of the word */}
       <div className="relative flex-1 flex items-center">
