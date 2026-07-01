@@ -12,6 +12,7 @@ function App() {
       <Hero />
       <About />
       <Projects />
+      <Certificates />
     </div>
   );
 }
