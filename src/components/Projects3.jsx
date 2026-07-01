@@ -49,7 +49,7 @@ function Carousel({ images }) {
   return (
     <div className="relative w-full select-none">
       {/* Image */}
-      <div className="relative overflow-hidden rounded-xl aspect-[16/8] bg-[#16161c]">
+      <div className="relative overflow-hidden rounded-xl aspect-[16/10] bg-[#16161c]">
         {images.map((src, i) => (
           <motion.img
             key={i}
@@ -112,7 +112,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="bg-[#0a0a0f] text-[#f5f3ee] px-6 md:px-16 pt-20 pb-40"
+      className="bg-[#0a0a0f] text-[#f5f3ee] px-6 md:px-16 pt-32 pb-40"
     >
       {/* Section header */}
       <motion.div
@@ -120,7 +120,7 @@ function Projects() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="mb-10"
+        className="mb-32"
       >
         <p className="font-mono text-xs tracking-widest uppercase text-[#8b8b94] mb-3">
           Selected Work
@@ -131,9 +131,6 @@ function Projects() {
         >
           Projects
         </h2>
-        <p className="mt-4 text-[#8b8b94] text-sm md:text-base max-w-md leading-relaxed">
-          A collection of front-end interfaces and hardware integrations built throughout my studies.
-        </p>
       </motion.div>
 
       {/* Project list */}
