@@ -22,15 +22,6 @@ const certificates = [
   },
   {
     number: '03',
-    title: 'Ethics and Security in Digital Trade',
-    issuer: 'University of Batangas – Lipa Campus',
-    date: 'May 14, 2025',
-    description:
-      'A seminar addressing the ethical responsibilities and security challenges in digital commerce, including data privacy, trust frameworks, and safe online transaction practices.',
-    image: 'https://placehold.co/800x560/16161c/8b8b94?text=Ethics+%26+Digital+Trade',
-  },
-  {
-    number: '04',
     title: 'Tech Nexus 2024: Empowering Campus Innovators',
     issuer: 'University of Batangas – Lipa Campus',
     date: 'December 7, 2024',
