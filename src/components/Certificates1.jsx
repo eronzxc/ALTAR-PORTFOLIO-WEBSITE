@@ -17,7 +17,7 @@ const certificates = [
     issuer: 'Cisco Networking Academy',
     date: 'July 2024',
     description:
-      'Another certificate description here. Mention the topic area and why it is relevant to your field or career goals.',
+      'Another certificate description here. Mention the topic area and why it's relevant to your field or career goals.',
     image: 'https://placehold.co/800x560/16161c/8b8b94?text=Certificate+2',
   },
   {
