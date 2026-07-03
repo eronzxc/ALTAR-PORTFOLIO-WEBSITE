@@ -7,7 +7,7 @@ import emailjs from '@emailjs/browser';
 const socials = [
   {
     label: 'Facebook',
-    handle: 'Aaron Ludwig',
+    handle: 'Aaron Altar',
     href: 'https://www.facebook.com/aaronludwigg',
     icon: <FaFacebook size={18} />,
   },
