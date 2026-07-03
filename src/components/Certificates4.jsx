@@ -21,7 +21,7 @@ const certificates = [
     date: 'November 7, 2025',
     description:
       'A regional congress discussing the latest developments in artificial intelligence and cybersecurity, with focus on ethical AI use and securing digital systems in modern infrastructure.',
-    image: aiCybersecurity, 
+    image: aiCybersecurity,
   },
   {
     number: '03',
@@ -80,11 +80,11 @@ function Certificates() {
             >
               {/* Certificate image — 55% width */}
               <div className="w-full md:w-[55%]">
-                <div className="rounded-xl overflow-hidden bg-[#16161c]">
+                <div className="rounded-xl overflow-hidden aspect-[16/8] bg-[#16161c]">
                   <img
                     src={cert.image}
                     alt={cert.title}
-                    className="w-full h-auto object-contain"
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>

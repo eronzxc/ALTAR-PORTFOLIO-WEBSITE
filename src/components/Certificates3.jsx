@@ -1,8 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import techTambayan from '../assets/tech_tambayan.png';
-import aiCybersecurity from '../assets/ai_and_cybersecurity.png';
-import techNexus from '../assets/tech_nexus.png';
 
 const certificates = [
   {
@@ -12,7 +9,7 @@ const certificates = [
     date: 'November 15, 2025',
     description:
       'A seminar exploring the intersection of data and human-centered design, covering how data-driven approaches can be applied to build more people-friendly digital systems.',
-    image: techTambayan,
+    image: 'https://placehold.co/800x560/16161c/8b8b94?text=Tech+Tambayan',
   },
   {
     number: '02',
@@ -21,7 +18,7 @@ const certificates = [
     date: 'November 7, 2025',
     description:
       'A regional congress discussing the latest developments in artificial intelligence and cybersecurity, with focus on ethical AI use and securing digital systems in modern infrastructure.',
-    image: aiCybersecurity, 
+    image: 'https://placehold.co/800x560/16161c/8b8b94?text=AI+%26+Cybersecurity+Congress',
   },
   {
     number: '03',
@@ -30,7 +27,7 @@ const certificates = [
     date: 'December 7, 2024',
     description:
       'A campus innovation summit focused on empowering student engineers and developers to build impactful technology solutions, featuring talks on emerging tech trends and student-led projects.',
-    image: techNexus,
+    image: 'https://placehold.co/800x560/16161c/8b8b94?text=Tech+Nexus+2024',
   },
 ];
 
@@ -80,11 +77,11 @@ function Certificates() {
             >
               {/* Certificate image — 55% width */}
               <div className="w-full md:w-[55%]">
-                <div className="rounded-xl overflow-hidden bg-[#16161c]">
+                <div className="rounded-xl overflow-hidden aspect-[16/8] bg-[#16161c]">
                   <img
                     src={cert.image}
                     alt={cert.title}
-                    className="w-full h-auto object-contain"
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>

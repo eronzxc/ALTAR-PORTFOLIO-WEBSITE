@@ -52,9 +52,9 @@ function Hero() {
           {/* Left border accent + bio text */}
           <div className="border-l-2 border-[#3a3a42] pl-4">
             <p className="text-[#8b8b94] leading-relaxed">
-              <span className="text-[#f5f3ee] font-semibold block mb-1">
+              <span className="text-[#f5f3ee] font-semibold">
                 Aaron Ludwig A. Altar — BS Computer Engineering
-              </span>
+              </span>{' '}
               A 4th-year Computer Engineering student with hands-on experience in front-end development, embedded systems, AutoCAD, and networking — bridging software and hardware through practical engineering.
             </p>
           </div>
