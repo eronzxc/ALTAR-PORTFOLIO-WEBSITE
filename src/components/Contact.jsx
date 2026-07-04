@@ -9,25 +9,25 @@ const socials = [
     label: 'Facebook',
     handle: 'Aaron Altar',
     href: 'https://www.facebook.com/aaronludwigg',
-    icon: <FaFacebook size={19} />,
+    icon: <FaFacebook size={18} />,
   },
   {
     label: 'Instagram',
     handle: '@aaron.ludwigg',
     href: 'https://www.instagram.com/aaron.ludwigg/',
-    icon: <FaInstagram size={19} />,
+    icon: <FaInstagram size={18} />,
   },
   {
     label: 'GitHub',
     handle: 'eronzxc',
     href: 'https://github.com/eronzxc',
-    icon: <FaGithub size={19} />,
+    icon: <FaGithub size={18} />,
   },
   {
     label: 'Email',
     handle: 'aaronaltar@gmail.com',
     href: 'mailto:aaronaltar@gmail.com',
-    icon: <Mail size={19} />,
+    icon: <Mail size={18} />,
   },
 ];
 
