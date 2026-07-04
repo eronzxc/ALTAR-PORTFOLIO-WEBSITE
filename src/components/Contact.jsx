@@ -15,7 +15,7 @@ const socials = [
     label: 'Instagram',
     handle: '@aaron.ludwigg',
     href: 'https://www.instagram.com/aaron.ludwigg/',
-    icon: <FaInstagram size={18} />,
+    icon: <FaInstagram size={19} />,
   },
   {
     label: 'GitHub',
