@@ -9,7 +9,7 @@ const socials = [
     label: 'Facebook',
     handle: 'Aaron Altar',
     href: 'https://www.facebook.com/aaronludwigg',
-    icon: <FaFacebook size={18} />,
+    icon: <FaFacebook size={19} />,
   },
   {
     label: 'Instagram',
