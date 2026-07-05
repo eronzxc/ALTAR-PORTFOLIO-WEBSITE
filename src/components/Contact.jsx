@@ -21,7 +21,7 @@ const socials = [
     label: 'GitHub',
     handle: 'eronzxc',
     href: 'https://github.com/eronzxc',
-    icon: <FaGithub size={18} />,
+    icon: <FaGithub size={19} />,
   },
   {
     label: 'Email',
