@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import SecShotClock1 from '../assets/24SecShotClock.png';
 
 const projects = [
   {
@@ -17,12 +18,12 @@ const projects = [
   },
   {
     number: '02',
-    title: 'Project Title Two',
+    title: '24 Seconds Shot Clock',
     description:
       'Another project description here. Keep it concise — one to two sentences about what it is and what makes it interesting.',
     tags: ['Arduino', 'C++', 'IoT'],
     images: [
-      'https://placehold.co/800x500/16161c/8b8b94?text=Screenshot+1',
+      'SecShotClock1,
       'https://placehold.co/800x500/16161c/8b8b94?text=Screenshot+2',
     ],
   },
