@@ -21,9 +21,9 @@ const projects = [
     title: '24 Seconds Shot Clock',
     description:
       'Another project description here. Keep it concise — one to two sentences about what it is and what makes it interesting.',
-    tags: ['Logic Gates', 'Digital Logic', 'PCB Etching', 'Circuit Design', 'Hardware']
+    tags: ['Logic Gates', 'Sequential Circuits', 'PCB Etching', 'Digital Logic'],
     images: [
-      'SecShotClock1,
+      SecShotClock1,
       'https://placehold.co/800x500/16161c/8b8b94?text=Screenshot+2',
     ],
   },
