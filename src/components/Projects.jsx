@@ -20,7 +20,7 @@ const projects = [
     number: '02',
     title: '24 Seconds Shot Clock',
     description:
-      'Another project description here. Keep it concise — one to two sentences about what it is and what makes it interesting.',
+      'A 24-second shot clock built entirely from discrete logic gates, developed as a final project for Logic Circuits and Design. Features count-up and count-down modes, automatic buzzer activation at both limits, and a manual buzzer control operable only during pause — designed and fabricated on a hand-etched PCB.',
     tags: ['Logic Gates', 'Sequential Circuits', 'PCB Etching', 'Digital Logic'],
     images: [
       SecShotClock1,
