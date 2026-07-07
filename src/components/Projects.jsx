@@ -6,10 +6,10 @@ import SecShotClock1 from '../assets/24SecShotClock.png';
 const projects = [
   {
     number: '01',
-    title: 'Project Title One',
+    title: 'H.A.P.A.G: Healthy and Affordable Personalized Automated Goal-Oriented Meal Planning System',
     description:
       'A brief description of what this project does, the problem it solves, and the tech stack or tools used to build it.',
-    tags: ['React', 'Tailwind', 'Firebase'],
+    tags: ['React', 'Tailwind', 'CSS', 'JavaScript'],
     images: [
       'https://placehold.co/800x500/16161c/8b8b94?text=Screenshot+1',
       'https://placehold.co/800x500/16161c/8b8b94?text=Screenshot+2',
